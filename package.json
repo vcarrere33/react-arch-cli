@@ -1,0 +1,31 @@
+{
+  "name": "react-arch-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "rc": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcarrere33/react-arch-cli.git"
+  },
+  "keywords": [
+    "react",
+    "cli"
+  ],
+  "author": "vcarrere33",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vcarrere33/react-arch-cli/issues"
+  },
+  "homepage": "https://github.com/vcarrere33/react-arch-cli#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.1",
+    "shelljs": "^0.8.3"
+  }
+}
