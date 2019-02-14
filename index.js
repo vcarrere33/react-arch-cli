@@ -1,8 +1,11 @@
-import commander from 'commander';
-import createComponent from './src/createComponent';
-import createAction from './src/createAction';
-import createReducer from './src/createReducer';
-import createSaga from './src/createReducer';
+#!/usr/bin/env node
+'use strict';
+
+const commander = require('commander');
+const createComponent = require('./src/createComponent');
+const createAction = require('./src/createAction');
+const createReducer = require('./src/createReducer');
+const createSaga = require('./src/createSaga');
 
 commander
   .command('c <component>')
@@ -19,8 +22,11 @@ commander
 
 commander
   .command('reducer <reducer>')
+  .option('-s, --status', 'with constant STATUS')
   .action(createReducer);
 
 commander
   .command('saga <saga>')
   .action(createSaga);
+
+commander.parse(process.argv);
